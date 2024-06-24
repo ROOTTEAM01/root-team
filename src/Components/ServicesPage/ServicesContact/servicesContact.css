@@ -1,0 +1,52 @@
+.ServicesContact{
+    width: 1170px;
+    padding-bottom: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ServicesContactImg img{
+    width: 470px;
+    height: 308px;
+}
+
+.ServicesContactBox{
+    width: 626px;
+    color: white;
+}
+
+.ServicesContactBox h4{
+    color: #00B9C5;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.ServicesContactBox h2{
+    position: relative;
+    font-size: 54px;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.ServicesContactBox p{
+    color: #FFFFFF99;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+.ServicesContactBox button{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.125em;
+    background-color: #DB3647;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 100px 100px 100px 100px;
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+    margin-top: 15px;
+}

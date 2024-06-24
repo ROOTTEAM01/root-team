@@ -1,0 +1,111 @@
+.Services-Item {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E0F20;
+    position: relative;
+    padding-bottom: 222px;
+}
+
+.ServicesCont {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ServicesTitle h4 {
+    color: #00B9C5;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.ServicesTitle h2 {
+    font-size: 54px;
+    margin-top: 22px;
+    color: white;
+}
+
+.ServicesTitle p {
+    color: #FFFFFF99;
+    font-size: 17px;
+    margin: 22px 0;
+    width: 600px;
+}
+
+.ProgramingItems {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.programingLanguageItems {
+    width: 585px;
+    height: 421px;
+    background-color: #333787;
+    padding: 64px;
+}
+
+.BackendItems, .frontItem {
+    background-color: #343657;
+}
+
+.AI-Item {
+    background-color: #DB3647;;
+}
+
+.ItemProgramming {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 750px;
+}
+
+.ItemProgramming2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 764px;
+}
+
+.programingLanguageItems {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.nameProgrammingItem {
+    display: flex;
+    align-items: center;
+}
+
+.nameProgrammingItem h3 {
+    font-size: 54px;
+}
+
+
+.programingLanguageItems p {
+    color: #FFFFFF99;
+    font-size: 17px;
+}
+
+.btnLgProgramming {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.btnLgProgramming button {
+    position: relative;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 16px 32px 16px 32px;
+    font-size: 16px;
+}

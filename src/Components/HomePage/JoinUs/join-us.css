@@ -1,0 +1,74 @@
+.JoinUs-Item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0f20;
+    padding-bottom: 200px;
+
+    .JoinUsCont {
+        width: 1170px;
+        display: flex;
+        align-items: center;
+    }
+
+    .aboutUsItemImg {
+        position: relative;
+        width: 238px;
+        height: 468px;
+    }
+
+    .JoinUsContImgItem {
+        display: flex;
+        align-items: center;
+    }
+
+    .aboutUsItemImg img {
+        width: 338px;
+        height: 468px;
+    }
+
+    .ImgPsAbsolute {
+        height: 673px;
+    }
+
+    .ImgPsAbsolute img {
+        position: absolute;
+        left: -134px;
+    }
+
+    .JoinUsContChildDiv {
+        margin-left: 181px;
+
+        h4 {
+            color: rgb(0, 185, 197);
+            letter-spacing: 3px;
+            font-size: 13px;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 54px;
+            margin-top: 22px;
+            color: white;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 17px;
+            margin: 22px 0;
+        }
+
+        button {
+            border: 1px solid white;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 16px 32px;
+            border-radius: 100px;
+            cursor: pointer;
+            position: relative;
+        }
+    }
+
+}

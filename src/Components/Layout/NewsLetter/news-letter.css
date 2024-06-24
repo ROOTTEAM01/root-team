@@ -1,0 +1,103 @@
+.newsLetter-Item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0e0f20;
+
+    .newsLetterCont {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: -183px;
+        width: 1170px;
+        height: 283px;
+        background-color: #E2E5F2;
+        z-index: 1;
+    }
+
+    .newsLetterImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .newsLetterImg2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .newsLetterImg3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .newsLetterCont h4 {
+        color: rgb(0, 185, 197);
+        letter-spacing: 3px;
+        font-size: 13px;
+    }
+
+    .newsLetterCont h2 {
+        position: relative;
+        font-size: 54px;
+        margin-top: 15px;
+        color: #0E0F20;
+    }
+
+    .newsLetterContChildDiv {
+        width: 400px;
+    }
+
+    .newsLetterContChildDiv2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .newsLetterCont h3 {
+        font-size: 31px;
+        color: #333787;
+        font-weight: bold;
+    }
+
+    .newsLetterCont p {
+        color: #64657D;
+        font-size: 17px;
+        margin: 22px 0;
+    }
+
+    .newsLetterCont form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .newsLetterCont form input {
+        padding: 12px 16px;
+        width: 390px;
+        border: none;
+        position: relative;
+    }
+
+    .newsLetterCont form input:focus {
+        outline: none;
+    }
+
+    .newsLetterCont form button {
+        position: relative;
+        border: none;
+        border-radius: 100px;
+        background-color: #DB3647;
+        color: white;
+        font-weight: bold;
+        padding: 11px 32px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+
+}

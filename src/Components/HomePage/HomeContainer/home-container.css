@@ -1,0 +1,53 @@
+.Header-Item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(#0E0F20CC, #0E0F20CC),
+    url('../../../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 131px;
+}
+
+.ItemCont {
+    width: 1170px;
+    padding: 140px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.child-itemCont {
+    width: 600px;
+}
+
+h1 {
+    position: relative;
+    color: white;
+    font-size: 66px;
+    font-family: "Work Sans", serif;
+}
+
+.child-itemCont p {
+    margin-bottom: 32px;
+    margin-top: 32px;
+    font-size: 18px;
+}
+
+.child-itemCont button {
+    position: relative;
+    padding: 15px 38px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-radius: 28px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+}
