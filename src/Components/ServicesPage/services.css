@@ -1,0 +1,14 @@
+.Services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Services .Services-Item {
+    padding-bottom: 100px;
+}
+
+.Services .ItemProgramming2 {
+    display: none;
+}

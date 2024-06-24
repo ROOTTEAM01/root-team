@@ -1,0 +1,970 @@
+@media (max-width: 1447px) {
+    .aboutUsItemImg {
+        width: auto !important;
+    }
+
+    .ImgPsAbsolute img {
+        position: static !important;
+    }
+
+    .JoinUsContChildDiv {
+        margin-left: 62px !important;
+    }
+
+    .ImgPsAbsolute {
+        margin-right: 31px !important;
+    }
+}
+
+
+@media (max-width: 1197px) {
+    .ServicesContactBox {
+        width: 556px !important;
+    }
+
+    .ServicesContactImg img {
+        width: 374px !important;
+        height: 246px !important;
+    }
+
+    .ContactHeaderItemCont, .ServicesContact, .header-container, .ItemCont, .ContClientItem, .aboutUsCont, .ServicesCont, .ContLogoIpsum, .worksCont, .TestimonialsCont, .JoinUsCont, .newsLetterCont, .footerItem, .footerItem2 {
+        width: 90% !important;
+        position: relative !important;
+    }
+
+    .newsLetterCont {
+        position: absolute !important;
+    }
+
+    .newsLetterCont h2 {
+        font-size: 42px !important;
+    }
+
+    .newsLetterContChildDiv {
+        width: 333px !important;
+    }
+
+    .TestimonialsBoxChildDiv {
+        width: 500px !important;
+        height: 311px !important;
+    }
+
+    .TestimonialsBoxCont h2 {
+        font-size: 28px !important;
+    }
+
+    .TestimonialsBoxCont p {
+        font-size: 14px !important;
+    }
+
+    .TestimonialsBox {
+        flex-wrap: wrap !important;
+        /*justify-content: center;*/
+    }
+
+    .works-ItemTittle h4 {
+        margin-bottom: 22px !important;
+    }
+
+    .WorksTitleBtn h2 {
+        margin-top: 0 !important;
+    }
+
+    .ContLogoIpsum-Img img {
+        margin-bottom: 10px !important;
+    }
+
+    .ContLogoIpsum-Img {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .ProgramingItems {
+        justify-content: center !important;
+    }
+
+    .nameProgrammingItem h3 {
+        font-size: 33px !important;
+    }
+
+    .programingLanguageItems p {
+        font-size: 13px !important;
+    }
+
+    .btnLgProgramming button {
+        padding: 7px 22px !important;
+        font-size: 14px !important;
+    }
+
+    .ContClientItem {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-around !important;
+    }
+
+    .aboutUsImg img {
+        width: 500px !important;
+    }
+
+    .boxWorks {
+        justify-content: center !important;
+    }
+
+    .boxWorksChildDiv {
+        width: 500px !important;
+        padding: 54px !important;
+    }
+
+    .aboutUsText {
+        width: 400px !important;
+    }
+
+    .aboutUsText h2 {
+        font-size: 40px !important;
+    }
+
+    .aboutUsText p {
+        font-size: 14px !important;
+    }
+
+    .programingLanguageItems {
+        width: 485px !important;
+        height: 321px !important;
+    }
+
+    .aboutUsItemImg img {
+        width: 300px !important;
+        height: 400px !important;
+    }
+
+    .JoinUsContChildDiv h2 {
+        font-size: 42px !important;
+    }
+}
+
+@media (max-width: 1113px) {
+
+    .aboutUsItemImg img {
+        width: 258px !important;
+        height: 337px !important;
+    }
+
+    .boxWorksChildDiv {
+        width: 480px !important;
+        padding: 40px !important;
+    }
+
+    .TestimonialsBox {
+        justify-content: center !important;
+    }
+
+    .TestimonialsBoxChildDiv {
+        margin: 10px 0 !important;
+    }
+
+    .TestimonialsBoxChildDiv {
+        width: 569px !important;
+        height: 364px !important;
+    }
+
+    .TestimonialsBoxCont h2 {
+        font-size: 36px !important;
+    }
+
+}
+
+@media (max-width: 1078px) {
+
+    .ServicesContact {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .ServicesContact .ServicesContactBox {
+        margin-top: 30px !important;
+    }
+
+    .ServicesContactBox p {
+        font-size: 15px !important;
+    }
+
+    .ServicesContactBox {
+        width: 513px !important;
+    }
+
+    .ServicesContactBox h2 {
+        font-size: 50px !important;
+    }
+
+    .boxWorksChildDiv {
+        width: 410px !important;
+        height: 364px !important;
+    }
+
+    .boxWorksChildDiv h2 {
+        font-size: 26px !important;
+    }
+
+    .boxWorksChildDiv p {
+        font-size: 14px !important;
+    }
+
+    .boxWorksChildDiv button {
+        padding: 11px 25px !important;
+    }
+
+    .programingLanguageItems {
+        width: 380px !important;
+        height: 338px !important;
+    }
+
+    .nameProgrammingItem h3 {
+        font-size: 25px !important;
+    }
+
+    .nameProgrammingItem img {
+        width: 55px !important;
+    }
+
+    .btnLgProgramming button {
+        padding: 6px 20px !important;
+        font-size: 12px !important;
+    }
+
+}
+
+@media (max-width: 1036px) {
+
+    .aboutUsMainItem3{
+        width: auto !important;
+    }
+
+    .aboutUsMainItem2{
+        order: 2 !important;
+    }
+
+    .aboutUsMain .aboutUsCont {
+        margin-bottom: 11px !important;
+    }
+
+    .aboutUs-Item {
+        padding: 50px 0 !important;
+    }
+
+        .footerItem2 {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+
+    }
+
+    .footerItem {
+        flex-wrap: wrap !important;
+    }
+
+    .footerBox {
+        margin: 0 10px !important;
+    }
+
+    .aboutUsCont {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .aboutUsText {
+        margin-top: 20px !important;
+    }
+
+    .aboutUsImg img {
+        width: 600px !important;
+    }
+
+    .aboutUsText {
+        width: 600px !important;
+    }
+
+    .JoinUsContChildDiv h2 {
+        font-size: 39px !important;
+    }
+
+    .JoinUsContChildDiv p {
+        font-size: 16px !important;
+    }
+
+    .JoinUs-Item {
+        padding-bottom: 88px !important;
+    }
+
+    .JoinUsContChildDiv {
+        margin-left: 33px !important;
+    }
+
+    .newsLetterContChildDiv {
+        width: 298px !important;
+    }
+
+    .newsLetterCont h2 {
+        font-size: 37px !important;
+    }
+
+    .newsLetterCont h3 {
+        font-size: 27px !important;
+    }
+
+    .newsLetterCont p {
+        font-size: 15px !important;
+    }
+
+    .newsLetterCont form input {
+        width: 320px !important;
+    }
+
+    .newsLetterCont form button {
+        padding: 11px 28px !important;
+        font-size: 14px !important;
+    }
+}
+
+
+@media (max-width: 953px) {
+
+    .aboutUsItemImg img {
+        width: 230px !important;
+        height: 297px !important;
+    }
+
+    .ItemCont {
+        padding: 77px 0 !important;
+    }
+
+    #div1 {
+        order: 2 !important;
+    }
+
+    #div2 {
+        order: 1 !important;
+    }
+
+    .switch-order #div1 {
+        order: 2 !important;
+    }
+
+    .switch-order #div2 {
+        order: 1 !important;
+    }
+
+    .child-itemCont {
+        width: 350px !important;
+    }
+
+    h1 {
+        font-size: 40px !important;
+    }
+
+    .child-itemCont p {
+        font-size: 15px !important;
+    }
+
+    .child-itemCont button {
+        padding: 10px 15px !important;
+        font-size: 14px !important;
+    }
+
+    .UlHeader {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        left: 0;
+        z-index: 0;
+        bottom: -300px;
+        opacity: 0;
+        transition: .0s;
+        overflow: auto;
+    }
+
+    .itemLogo {
+        z-index: 2 !important;
+    }
+
+    .HeaderCategory ul li {
+        padding: 16px 5px !important;
+    }
+
+    .HeaderCategory ul a {
+        color: #64657D !important;
+    }
+
+    .HeaderCategory button {
+        padding: 10px 32px !important;
+    }
+
+    .itemLogo img {
+        width: 78px !important;
+    }
+
+    .HamburgerItem {
+        display: flex !important;
+    }
+
+    .ContLogoIpsum h3 {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .programingLanguageItems {
+        width: 585px !important;
+        height: 421px !important;
+        padding: 64px !important;
+    }
+
+    .boxWorksChildDiv {
+        width: 585px !important;
+    }
+
+    .nameProgrammingItem h3 {
+        font-size: 54px !important;
+    }
+
+
+    .programingLanguageItems p {
+        color: #FFFFFF99 !important;
+        font-size: 17px !important;
+    }
+
+
+    .btnLgProgramming button {
+        padding: 16px 32px !important;
+        font-size: 16px !important;
+    }
+}
+
+
+@media (min-width: 953px) {
+    .HeaderCategory ul {
+        opacity: 1 !important;
+        z-index: 1 !important;
+    }
+}
+
+@media (max-width: 893px) {
+
+    .newsLetterCont form input {
+        width: 270px !important;
+    }
+
+    .newsLetterCont p {
+        font-size: 14px !important;
+    }
+
+    .newsLetterCont h3 {
+        font-size: 24px !important;
+    }
+
+    .newsLetterContChildDiv {
+        width: 250px !important;
+    }
+
+    .newsLetterCont h2 {
+        font-size: 33px !important;
+    }
+
+    .JoinUsCont {
+        flex-wrap: wrap !important;
+    }
+
+    .aboutUsItemImg {
+        height: auto !important;
+    }
+
+    .ImgPsAbsolute {
+        height: 406px !important;
+    }
+
+    .JoinUs-Item {
+        padding-bottom: 224px !important;
+    }
+
+    .aboutUsItemImg img {
+        width: 100% !important;
+        height: 378px !important;
+    }
+
+    .ImgPsAbsolute {
+        height: 505px !important;
+    }
+
+    .newsLetterImg, .footerBg {
+        width: 100% !important;
+    }
+}
+
+
+@media (max-width: 778px) {
+
+    .ItemProgramming2 {
+        width: 100% !important;
+    }
+
+    footer {
+        padding-top: 120px !important;
+    }
+
+    .newsLetterCont {
+        padding: 45px 15px !important;
+        flex-wrap: wrap !important;
+        height: auto !important;
+        justify-content: start !important;
+    }
+
+    .newsLetterCont form {
+        flex-direction: column !important;
+        align-items: center !important;
+
+    }
+
+    .newsLetterCont form label {
+        width: 100% !important;
+    }
+
+    .newsLetterCont form input {
+        width: 100% !important;
+    }
+
+    .newsLetterCont form button {
+        margin: 10px 0 !important;
+        width: 100% !important;
+    }
+
+    .newsLetterContChildDiv2 {
+        width: 100% !important;
+    }
+
+    .newsLetterContChildDiv {
+        width: auto !important;
+    }
+
+    .newsLetterImg2, .newsLetterImg3 {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 674px) {
+
+    .footerBox {
+        margin-top: 20px !important;
+    }
+
+    .countClientsItem {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+
+    .countClientsItem h3 {
+        font-size: 32px !important;
+        margin: 8px 0 !important;
+
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .aboutUsItemImg img {
+        height: 350px !important;
+    }
+
+    .backLineImg {
+        left: 0 !important;
+        top: -1px !important;
+    }
+
+    .backLineImg2 {
+        right: 0 !important;
+    }
+
+    .TestimonialsBoxCont h2 {
+        font-size: 33px !important;
+    }
+
+    .TestimonialsBoxChildDiv {
+        height: 356px !important;
+    }
+
+    .backLineImg img, .backLineImg2 img {
+        width: 100% !important;
+    }
+
+    .TestimonialsBoxChildDiv {
+        width: 100% !important;
+    }
+
+    .WorksTitleBtn {
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+
+    .works-ItemTittle p {
+        width: auto !important;
+        font-size: 14px !important;
+    }
+
+    .ContLogoIpsum-Img img {
+        width: 109px !important;
+    }
+
+    .programingLanguageItems {
+        width: 100% !important;
+        height: 340px !important;
+        padding: 64px !important;
+    }
+
+    .boxWorksChildDiv {
+        width: 100% !important;
+        height: 303px !important;
+    }
+
+    .boxWorksChildDiv h2 {
+        font-size: 20px !important;
+    }
+
+    .boxImgWorks img {
+        height: auto !important;
+    }
+
+    .nameProgrammingItem h3, .WorksTitleBtn h2 {
+        font-size: 30px !important;
+        margin-bottom: 5px !important;
+    }
+
+
+    .programingLanguageItems p {
+        color: #FFFFFF99 !important;
+        font-size: 15px !important;
+    }
+
+
+    .btnLgProgramming button {
+        padding: 10px 22px !important;
+        font-size: 13px !important;
+    }
+
+    .AI-Item {
+        align-items: start !important;
+    }
+
+    .nameProgrammingItem {
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+
+    .ServicesTitle h2 {
+        font-size: 34px !important;
+    }
+
+    .ServicesTitle p {
+        font-size: 14px !important;
+    }
+}
+
+
+@media (max-width: 636px) {
+
+    .aboutUsImg img {
+        width: 100% !important;
+    }
+
+    .aboutUsText {
+        width: 100% !important;
+    }
+
+    .ServicesTitle p {
+        width: auto !important;
+    }
+
+    .aboutUsItemImg img {
+        height: 315px !important;
+    }
+
+    .ImgPsAbsolute {
+        height: 417px !important;
+    }
+
+    .ServicesContactBox {
+        width: 374px !important;
+    }
+
+    .ContactHeaderItemCont h2 {
+        position: relative !important;
+        font-size: 55px !important;
+    }
+    .LinkItem {
+        width: 158px !important;
+    }
+
+    .ContactHeaderItemCont {
+        height: 112px !important;
+}
+    .ContactHeaderItem {
+        height: 48dvh !important;
+    }
+
+    }
+
+@media (max-width: 503px) {
+    .footerEndTextDiv {
+        margin-top: 10px !important;
+    }
+
+    .footerItem2 p {
+        font-size: 14px !important;
+    }
+
+    .footerEndTextDiv a {
+        margin: 5px !important;
+    }
+
+    .TestimonialsBoxCont h2 {
+        font-size: 28px !important;
+    }
+
+    .TestimonialsBoxChildDiv {
+        justify-content: flex-end !important;
+    }
+
+    .JoinUsContChildDiv {
+        margin-left: 0 !important;
+    }
+
+}
+
+@media (max-width: 534px) {
+    .newsLetterCont h2 {
+        font-size: 29px !important;
+    }
+
+    .newsLetterCont h3 {
+        font-size: 21px !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .newsLetterCont h2 {
+        font-size: 27px !important;
+    }
+
+    .newsLetterCont h3 {
+        font-size: 19px !important;
+    }
+
+    .newsLetterCont p {
+        font-size: 12px !important;
+    }
+
+    .HeaderCategory button {
+        padding: 7px 17px !important;
+    }
+
+    .HeaderCategory button a {
+        font-size: 14px !important;
+    }
+
+    .child-itemCont {
+        width: 300px !important;
+    }
+
+    h1 {
+        font-size: 34px !important;
+    }
+
+    .child-itemCont p {
+        font-size: 12px !important;
+    }
+
+    .child-itemCont button {
+        padding: 9px 10px !important;
+        font-size: 12px !important;
+    }
+
+    .countClientsItem {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+
+    .countClientsItem h3 {
+        font-size: 29px !important;
+        margin: 8px 0 !important;
+
+    }
+
+    .CompStyle {
+        bottom: -23px !important;
+    }
+
+    .CompStyle img {
+        width: 100% !important;
+    }
+
+    .aboutUsImg img {
+        width: 100% !important;
+    }
+
+    .aboutUsText {
+        width: 100% !important;
+    }
+
+    .aboutUsText h2 {
+        font-size: 32px !important;
+    }
+
+    .aboutUsText p {
+        font-size: 14px !important;
+    }
+
+    .aboutUsItemImg img {
+        height: 262px !important;
+    }
+
+    .ImgPsAbsolute {
+        height: 352px !important;
+    }
+
+}
+
+
+@media (max-width: 456px) {
+
+    .ContLogoIpsum h3 {
+        font-size: 16px !important;
+    }
+
+    .ContLogoIpsum-Img img {
+        width: 86px !important;
+    }
+
+    .programingLanguageItems {
+        width: 100% !important;
+        height: 298px !important;
+        padding: 34px !important;
+    }
+
+    .nameProgrammingItem h3 {
+        font-size: 25px !important;
+    }
+
+
+    .programingLanguageItems p {
+        color: #FFFFFF99 !important;
+        font-size: 13px !important;
+    }
+
+    .nameProgrammingItem img {
+        width: 46px !important;
+    }
+
+    .btnLgProgramming button {
+        padding: 10px 22px !important;
+        font-size: 13px !important;
+    }
+
+    .JoinUsContChildDiv h2 {
+        font-size: 27px !important;
+    }
+
+    .aboutUsItemImg img {
+        height: 222px !important;
+    }
+
+    .aboutUsItemImg img {
+        height: 195px !important;
+    }
+
+    .ImgPsAbsolute {
+        height: 283px !important;
+    }
+
+    .JoinUsContChildDiv p {
+        font-size: 14px !important;
+    }
+
+    .JoinUsContChildDiv button {
+        padding: 11px 29px !important;
+    }
+}
+
+@media (max-width: 442px) {
+    footer {
+        padding-top: 130px !important;
+    }
+}
+
+@media (max-width: 423px) {
+
+    footer {
+        padding-top: 150px !important;
+    }
+
+    .boxWorksChildDiv {
+        height: auto !important;
+    }
+
+    .boxWorksChildDiv h2 {
+        font-size: 18px !important;
+    }
+
+    .boxWorksChildDiv p {
+        font-size: 13px !important;
+    }
+
+    .footerBox p {
+        font-size: 14px !important;
+    }
+
+    .footerCardBox2 i, .footerCardBox i {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .HeaderCategory button {
+        padding: 7px 15px !important;
+    }
+
+    .HeaderCategory button a {
+        font-size: 13px !important;
+    }
+
+    .itemLogo img {
+        width: 63px !important;
+    }
+
+    .nameProgrammingItem h3 {
+        font-size: 23px !important;
+    }
+
+    .TestimonialsBoxCont h2 {
+        font-size: 25px !important;
+    }
+
+    .TestimonialsBoxCont p {
+        font-size: 13px !important;
+    }
+}
+
+@media (max-width: 354px) {
+    .TestimonialsBoxChildDiv {
+        height: 383px !important;
+    }
+
+    .ContLogoIpsum {
+        height: 236px !important;
+    }
+
+    .footerBox p {
+        font-size: 13px !important;
+    }
+}

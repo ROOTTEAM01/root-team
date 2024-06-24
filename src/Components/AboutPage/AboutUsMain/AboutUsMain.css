@@ -1,0 +1,32 @@
+.aboutUsMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsMain .aboutUsCont {
+    margin-bottom: 100px;
+}
+
+.aboutUsMainCont {
+    margin-bottom: 0 !important;
+}
+
+.aboutMainImg2 img {
+    width: 521px;
+}
+
+.aboutUsMainItem3 img {
+    width: 666px;
+}
+
+.aboutUsMainItem2 {
+    width: 574px;
+}
+
+.aboutUsMainItem3 {
+    width: 436px;
+}
+
+.aboutUsMainItem2P {
+    margin-top: 7px !important;
+}

@@ -1,0 +1,31 @@
+.client-Item {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00B9C5;
+    position: relative;
+}
+
+.ContClientItem {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.countClientsItem {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.countClientsItem h3 {
+    font-size: 46px;
+    margin-right: 22px;
+}
+
+.countClientsItem p {
+    width: 192px;
+    font-weight: bold;
+}

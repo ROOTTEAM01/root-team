@@ -1,0 +1,255 @@
+button:hover {
+    animation: windBtn 7s linear infinite !important;
+    animation-delay: 0s !important;
+}
+
+.anim.active2, .footerItem .anim.active2{
+    animation: textAnim 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.newsLetter-Item .anim.active2 {
+    animation: DivAnim 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.AboutUsHeaderItemCont .anim.active2, .ContactHeaderItemCont .anim.active2{
+    animation: PagesAnimText 0.8s linear !important;
+    animation-delay: 0s !important;
+
+}
+
+.ContAnimate .anim.active2, .TestimonialsBoxChildDivAnim .anim.active2, .aboutUsItemImgAnim .anim.active2 {
+    animation: ContAnim 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.boxWorks .anim.active2 {
+    animation: WorksItemAnim 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.animContWorks .anim.active2 {
+    animation: WorksItemAnim2 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.aboutUsText .anim.active2, .ContLogoIpsum .anim.active2, .JoinUsContChildDiv .anim.active2, .ServicesTitle .anim.active2, .WorksTitleBtn .anim.active2 {
+    animation: TitleAnim 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.ContLogoIpsum .anim.active2 {
+    animation: TitleAnim2 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+.ContLogoIpsum-Img .anim.active2 {
+    animation: TitleAnimLogo 1s linear !important;
+    animation-delay: 0s !important;
+}
+
+@keyframes WorksItemAnim {
+    0% {
+        top: 0;
+        left: 350px;
+        color: rgba(255, 255, 255, 0.44);
+        opacity: 0;
+    }
+    50% {
+        color: white;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes PagesAnimText {
+    0% {
+        font-size: 5px;
+        top: 0;
+        left: 400px;
+        color: rgba(255, 255, 255, 0.44);
+        opacity: 0;
+    }
+    100% {
+        color: white;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes WorksItemAnim2 {
+    0% {
+        top: 0;
+        left: -350px;
+        color: rgba(255, 255, 255, 0.44);
+        opacity: 0;
+    }
+    50% {
+        color: white;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes textAnim {
+    0% {
+        top: 150px;
+        left: 0;
+        color: rgba(255, 255, 255, 0.44);
+    }
+    50% {
+        color: white;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes DivAnim {
+    0% {
+        top: 80px;
+        background-color: rgba(255, 255, 255, 0.44);
+    }
+    50% {
+        background-color: white;
+        top: 0;
+    }
+}
+
+@keyframes ContAnim {
+    0% {
+        top: 200px;
+        left: 0;
+        color: rgba(255, 255, 255, 0.44);
+    }
+    50% {
+        color: white;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes TitleAnim {
+    0% {
+        top: -150px;
+        left: 0;
+        color: rgba(255, 255, 255, 0.44);
+    }
+    50% {
+        color: white;
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes TitleAnim2 {
+    0% {
+        top: -50px;
+        left: 0;
+    }
+    50% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes TitleAnimLogo {
+    0% {
+        top: 50px;
+        left: 0;
+    }
+    50% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes windBtn {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    1% {
+        top: 1px;
+        left: 0;
+    }
+    2% {
+        top: 2px;
+        left: 0;
+    }
+    3% {
+        top: 3px;
+        left: 0;
+    }
+    4% {
+        top: 4px;
+        left: 0;
+    }
+    5% {
+        top: 5px;
+        left: 0;
+    }
+    6% {
+        top: 4px;
+        left: 0;
+    }
+    7% {
+        top: 3px;
+        left: 0;
+    }
+    8% {
+        top: 2px;
+        left: 0;
+    }
+    9% {
+        top: 1px;
+        left: 0;
+    }
+    10% {
+        top: 0;
+        left: 0;
+    }
+    12% {
+        top: -1px;
+        left: 0;
+    }
+    13% {
+        top: -2px;
+        left: 0;
+    }
+    14% {
+        top: -3px;
+        left: 0;
+    }
+    15% {
+        top: -4px;
+        left: 0;
+    }
+    16% {
+        top: -5px;
+        left: 0;
+    }
+    17% {
+        top: -4px;
+        left: 0;
+    }
+    18% {
+        top: -3px;
+        left: 0;
+    }
+    19% {
+        top: -2px;
+        left: 0;
+    }
+    20% {
+        top: -1px;
+        left: 0;
+    }
+    21% {
+        top: 0;
+        left: 0;
+    }
+}

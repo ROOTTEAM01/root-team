@@ -1,0 +1,57 @@
+.ContactHeaderItem {
+    position: relative;
+    width: 100%;
+    height: 57dvh;
+    background-image: linear-gradient(#0E0F20CC, #0E0F20CC), url('../../../img/hero-contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.AboutUsBackgroundImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background-image: url('../../../img/AboutUsPattern.png');
+}
+
+.AboutUsBackgroundImg2 {
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
+
+.ContactHeaderItemCont {
+    width: 1170px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.LinkItem {
+    width: 195px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ContactHeaderItemCont a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.ContactHeaderItemCont h2 {
+    position: relative;
+    font-size: 72px;
+    font-family: "Work Sans", serif;
+}

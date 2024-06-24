@@ -1,0 +1,100 @@
+.Testimonials-Item {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#0e0f20d9, #0e0f20d9),
+    url('../../../img/testi-bg.jpg');
+    background-color: #0E0F20;;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.backLineImg {
+    position: absolute;
+    top: 0;
+    left: 230px;
+}
+
+.backLineImg2 {
+    position: absolute;
+    bottom: -4px;
+    right: 230px;
+}
+
+.TestimonialsCont {
+    width: 1170px;
+    margin: 110px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.TestimonialsBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.TestimonialsBoxChildDiv {
+    width: 569px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.TestimonialsBoxCont {
+    padding: 32px 32px 22px;
+}
+
+.TestimonialsBoxCont h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.TestimonialsBoxCont p {
+    color: #0E0F2099;;
+    font-size: 17px;
+    margin: 22px 0;
+}
+
+.TestimonialsBoxCont span {
+    margin-top: 10px;
+}
+
+.TestimonialsBoxCont span i {
+    color: #F2C94C;
+    font-size: 17px;
+}
+
+.TestimonialsBoxCont2 {
+    display: flex;
+    align-items: center;
+}
+
+.TestimonialsBoxCont2 img {
+    width: 100px;
+}
+
+.TestimonialsNameSurname {
+    margin-left: 20px;
+}
+
+.TestimonialsNameSurname h4 {
+    color: #00B9C5;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.TestimonialsNameSurname h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0E0F20;
+}

@@ -1,0 +1,70 @@
+.aboutUs-Item {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #0E0F20;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompStyle {
+    /*background-color: #00B9C5;*/
+    /*width: 472px;*/
+    /*height: 30px;*/
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    /*border-bottom-left-radius: 38px;*/
+}
+
+.aboutUsCont {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.aboutUsImg {*/
+
+/*}*/
+
+.aboutUsImg img {
+    position: relative;
+    width: 600px;
+}
+
+.aboutUsText {
+    width: 506px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.aboutUsText h4 {
+    color: #00B9C5;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.aboutUsText h2 {
+    position: relative;
+    font-size: 54px;
+    margin-top: 32px;
+}
+
+.aboutUsText p {
+    color: #FFFFFF99;
+    font-size: 17px;
+    margin: 32px 0;
+}
+
+.aboutUsText button {
+    position: relative;
+    font-weight: bolder;
+    background-color: rgba(14, 15, 32, 0);
+    color: white;
+    border: 1px solid white;
+    padding: 16px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+}

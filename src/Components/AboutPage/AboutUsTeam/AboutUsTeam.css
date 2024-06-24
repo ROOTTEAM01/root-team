@@ -1,0 +1,45 @@
+.AboutUsTeam2 {
+    width: 100%;
+    padding-bottom: 280px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.AboutUsTeam {
+    width: 1170px;
+    justify-content: space-between;
+}
+
+.AboutUsTeam h4 {
+    margin: 0;
+}
+
+.AboutUsTeam h2 {
+    margin-top: 10px;
+}
+
+.aboutUsTeamText {
+    width: 638px;
+    justify-content: center;
+}
+
+.aboutUsTeamImg img {
+    width: 468px;
+}
+
+.AboutUsTeam-boxName h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.AboutUsTeamLinkedin {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.AboutUsTeamLinkedin i {
+    font-size: 20px;
+    margin-right: 5px;
+}
