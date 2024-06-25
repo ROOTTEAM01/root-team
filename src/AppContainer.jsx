@@ -7,6 +7,7 @@ import {ContactPage} from "./Components/ContactPage/Contact";
 import {Services} from "./Components/ServicesPage/Services";
 import './App.css';
 import TeamPage from "./Components/TeamPage/TeamPage";
+import BlogPage from "./Components/BlogPage/BlogPage";
 
 export function AppContainer() {
 
@@ -68,6 +69,7 @@ export function AppContainer() {
                 <Route path='/Services' element={<Services setRefs={setRefs}/>}/>
                 <Route path='/Contact' element={<ContactPage setRefs={setRefs}/>}/>
                 <Route path='/Team' element={<TeamPage setRefs={setRefs}/>}/>
+                <Route path='/Blog' element={<BlogPage setRefs={setRefs}/>}/>
             </Route>
         </Routes>
     </>);
