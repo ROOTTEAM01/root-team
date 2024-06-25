@@ -1,88 +1,113 @@
-import {useState} from "react";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleBoolean, toggleBooleanF } from '../../../features/flag/flagReducer';
+import { NavLink } from 'react-router-dom';
 import logo from '../../../img/logo.png';
 import FlagArmenia from '../../../img/ArmFlag.jpg';
 import FlagAmerica from '../../../img/AmFlag.jpg';
-import {useDispatch, useSelector} from "react-redux";
-import {toggleBoolean, toggleBooleanF} from "../../../features/flag/flagReducer";
-import {NavLink} from "react-router-dom";
-import './header.css'
+import './header.css';
 
+export const Header = () => {
+  const { t, i18n } = useTranslation();
+  const flag = useSelector(state => state.flag.flag); 
+  const dispatch = useDispatch();
 
-export let Header = (props) => {
+  const [bars, setBars] = React.useState(false);
 
-    let flag = useSelector(state => state.flag.flag)
-
-    let dispatch = useDispatch()
-
-    const [bars, setBars] = useState(false);
-
-    let StyleDiv = {
-        a: {
-            display: 'inline-block',
-        }, b: {
-            display: 'none ',
-        },
-        c: {
-            zIndex: '1', opacity: '1', top: '103px',
-        }, d: {
-            zIndex: '0', opacity: '0', top: '-100px',
-        }
+  React.useEffect(() => {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+      if (savedLanguage === 'en') {
+        dispatch(toggleBooleanF()); 
+      } else {
+        dispatch(toggleBoolean()); 
+      }
     }
+  }, [dispatch, i18n]);
 
-    const handleNavLinkClick = (e) => {
-        window.location.href = e.target.href;
-    };
+  const handleNavLinkClick = (e) => {
+    e.preventDefault();
+    const { href } = e.target;
+    window.location.href = href;
+  };
 
-    return (<>
-        <header>
-            <div className='header-container'>
-                <div className="itemLogo">
-                    <div className="HamburgerItem">
-                            <span style={!bars ? StyleDiv.a : StyleDiv.b}>
-                            <i onClick={() => {
-                                setBars(true)
-                            }} className="fa-solid fa-bars"></i>
-                                </span>
-                        <span style={bars ? StyleDiv.a : StyleDiv.b}>
-                        <i onClick={() => {
-                            setBars(false)
-                        }} className="fa-solid fa-xmark"></i>
-                            </span>
-                    </div>
-                    <a href="#">
-                        <img src={logo} alt=""/>
-                    </a>
-                </div>
-                <div className="HeaderCategory">
-                    <ul className="UlHeader" style={bars ? StyleDiv.c : StyleDiv.d}>
-                        <li><NavLink onClick={handleNavLinkClick} exact to='/'>Home</NavLink></li>
-                        <li><NavLink onClick={handleNavLinkClick} to="/Services">Services</NavLink></li>
-                        <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">About</NavLink></li>
-                        <li><NavLink onClick={handleNavLinkClick} to="/Blog">Blog</NavLink></li>
-                        <li><NavLink onClick={handleNavLinkClick} to="/Pages">Pages</NavLink></li>
-                        <li><NavLink onClick={handleNavLinkClick} to="/Contact">Contact</NavLink></li>
-                        <li><NavLink onClick={handleNavLinkClick} to="/Team">Team</NavLink></li>
-                    </ul>
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem('selectedLanguage', lng); 
+  };
 
-                    <button>
-                        <a href="#">
-                            <b> Start a Project</b>
-                        </a>
-                    </button>
+  let StyleDiv = {
+    a: {
+      display: 'inline-block',
+    }, b: {
+      display: 'none',
+    },
+    c: {
+      zIndex: '1', opacity: '1', top: '103px',
+    }, d: {
+      zIndex: '0', opacity: '0', top: '-100px',
+    }
+  };
 
-                    <div className="flagItem">
-                        <p className="armFlagItem"
-                           style={{display: flag ? 'none' : 'inline'}}
-                           onClick={() => dispatch(toggleBoolean())}>
-                            <img src={FlagArmenia}
-                                 alt=""/></p>
-                        <p className="amFlagItem" style={{display: !flag ? 'none' : 'inline'}}
-                           onClick={() => dispatch(toggleBooleanF())}><img src={FlagAmerica}
-                                                                           alt=""/></p>
-                    </div>
-
-                </div>
+  return (
+    <>
+      <header>
+        <div className='header-container'>
+          <div className="itemLogo">
+            <div className="HamburgerItem">
+              <span style={!bars ? StyleDiv.a : StyleDiv.b}>
+                <i onClick={() => setBars(true)} className="fa-solid fa-bars"></i>
+              </span>
+              <span style={bars ? StyleDiv.a : StyleDiv.b}>
+                <i onClick={() => setBars(false)} className="fa-solid fa-xmark"></i>
+              </span>
             </div>
-        </header>
-    </>)
-}
+            <a href="#">
+              <img src={logo} alt=""/>
+            </a>
+          </div>
+          <div className="HeaderCategory">
+            <ul className="UlHeader" style={bars ? StyleDiv.c : StyleDiv.d}>
+              <li><NavLink onClick={handleNavLinkClick} exact to='/'>{t('home')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to="/Services">{t('services')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">{t('about')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to="/Blog">{t('blog')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to="/Pages">{t('pages')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to="/Contact">{t('contact')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to="/Team">{t('team')}</NavLink></li>
+            </ul>
+
+            <button>
+              <a href="#">
+                <b> {t('startProject')}</b>
+              </a>
+            </button>
+
+            <div className="flagItem" style={{cursor: "pointer"}}>
+              <p className="armFlagItem"
+                 style={{ display: flag ? 'none' : 'inline' }}
+                 onClick={() => {
+                   dispatch(toggleBoolean());
+                   changeLanguage('hy');
+                 }}>
+                <img src={FlagArmenia} alt="" />
+              </p>
+              <p className="amFlagItem" style={{ display: !flag ? 'none' : 'inline' }}
+                 onClick={() => {
+                   dispatch(toggleBooleanF());
+                   changeLanguage('en');
+                 }}>
+                <img src={FlagAmerica} alt="" />
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </header>
+    </>
+  );
+};
+
+export default Header;
