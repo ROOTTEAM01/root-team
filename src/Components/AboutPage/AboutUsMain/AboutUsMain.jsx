@@ -17,7 +17,7 @@ export let AboutUsMain = (props) => {
                     </div>
                     <div className="aboutUsText">
                         <h4>ABOUT US</h4>
-                        <h2 ref={setRefs} className="anim" className="anim">We’re On Mission To Help Business Grow Faster Thanever.</h2>
+                        <h2 ref={setRefs} className="anim">We’re On Mission To Help Business Grow Faster Thanever.</h2>
                         <p>Commodo elementum, sed imperdiet nunc euismod etiam aliquet viverra enim. Adipiscing nunc
                             condimentum
                             risus id. Aquam mattis magna facilisi fermentum, euismod vitae. Porttitor sit tincidunt

@@ -61,6 +61,7 @@ export let Header = (props) => {
                         <li><NavLink onClick={handleNavLinkClick} to="/Blog">Blog</NavLink></li>
                         <li><NavLink onClick={handleNavLinkClick} to="/Pages">Pages</NavLink></li>
                         <li><NavLink onClick={handleNavLinkClick} to="/Contact">Contact</NavLink></li>
+                        <li><NavLink onClick={handleNavLinkClick} to="/Team">Team</NavLink></li>
                     </ul>
 
                     <button>

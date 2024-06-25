@@ -1,0 +1,31 @@
+.teamUsMain {
+    gap: 64px;
+}
+
+.linkedinUL > li {
+    list-style: none;
+}
+
+.linkedinLink {
+    text-decoration: none;
+    color: #00B9C5;
+}
+
+.fa-linkedin {
+    margin-right: 20px;
+}
+
+.teamUsText {
+    width: 702px;
+    padding: 100px 0px 0px 0px;
+}
+
+/* .imgTeam {
+    width: 468px;
+    height: 547px;
+} */
+
+.imgTeam > img {
+    width: 100%;
+    height: 100%;
+}
