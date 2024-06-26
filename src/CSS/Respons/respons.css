@@ -18,6 +18,20 @@
 
 
 @media (max-width: 1197px) {
+
+
+    .contact-us-container {
+        justify-content: space-around !important;
+    }
+
+    .contact-us-box {
+        width: 444px !important;
+    }
+
+    .contact-us-item {
+        width: 444px !important;
+    }
+
     .ServicesContactBox {
         width: 556px !important;
     }
@@ -236,11 +250,39 @@
 
 @media (max-width: 1036px) {
 
-    .aboutUsMainItem3{
+    .teamUsMain {
+        gap: 33px !important;
+    }
+
+    .teamUsText{
+        padding: 0 !important;
+    }
+
+    .contact-us-item h2 {
+        font-size: 45px !important;
+    }
+
+    .contact-us-item p {
+        font-size: 14px !important;
+    }
+
+    .contact-us-item span {
+        font-size: 15px !important;
+    }
+
+    .ContactUsLink i {
+        font-size: 26px !important;
+    }
+
+    .contact-us-box input, .contact-us-box textarea {
+        padding: 7px 16px !important;
+    }
+
+    .aboutUsMainItem3 {
         width: auto !important;
     }
 
-    .aboutUsMainItem2{
+    .aboutUsMainItem2 {
         order: 2 !important;
     }
 
@@ -252,7 +294,7 @@
         padding: 50px 0 !important;
     }
 
-        .footerItem2 {
+    .footerItem2 {
         flex-wrap: wrap !important;
         justify-content: center !important;
 
@@ -327,6 +369,14 @@
 
 
 @media (max-width: 953px) {
+
+    .contact-us-item h2 {
+        font-size: 39px !important;
+    }
+
+    .contact-us-item, .contact-us-box {
+        width: 380px !important;
+    }
 
     .aboutUsItemImg img {
         width: 230px !important;
@@ -499,8 +549,35 @@
     }
 }
 
+@media (max-width: 831px) {
+    .contact-us-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .ItemContactUsBg {
+        width: 100% !important;
+        height: 50% !important;
+        bottom: 0 !important;
+    }
+
+    .contact-us-item, .contact-us-box {
+        width: 90% !important;
+    }
+
+    .contact-us-container {
+        height: 953px !important;
+        padding: 40px 0 !important;
+    }
+}
+
 
 @media (max-width: 778px) {
+
+    .map {
+        padding-bottom: 231px !important;
+    }
 
     .ItemProgramming2 {
         width: 100% !important;
@@ -570,6 +647,10 @@
 }
 
 @media (max-width: 660px) {
+
+    .contact-us-item, .contact-us-box {
+        height: 400px !important;
+    }
 
     .aboutUsItemImg img {
         height: 350px !important;
@@ -699,18 +780,20 @@
         position: relative !important;
         font-size: 55px !important;
     }
+
     .LinkItem {
         width: 158px !important;
     }
 
     .ContactHeaderItemCont {
         height: 112px !important;
-}
+    }
+
     .ContactHeaderItem {
         height: 48dvh !important;
     }
 
-    }
+}
 
 @media (max-width: 503px) {
     .footerEndTextDiv {
@@ -751,6 +834,11 @@
 
 
 @media (max-width: 500px) {
+
+    .contact-us-box button{
+        font-size: 14px !important;
+        padding: 12px 22px !important;
+    }
 
     .newsLetterCont h2 {
         font-size: 27px !important;
@@ -837,6 +925,19 @@
 
 
 @media (max-width: 456px) {
+
+    .ServicesContactBox button {
+        font-size: 12px !important;
+        padding: 12px 25px !important;
+    }
+
+    .ServicesContactBox h2 {
+        font-size: 39px !important;
+    }
+
+    .ServicesContactBox p {
+        font-size: 13px !important;
+    }
 
     .ContLogoIpsum h3 {
         font-size: 16px !important;
@@ -930,6 +1031,16 @@
 }
 
 @media (max-width: 390px) {
+
+    .ServicesContactImg img {
+        width: 100% !important;
+        height: 220px !important;
+    }
+
+    .ServicesContactBox {
+        width: 100% !important;
+    }
+
     .HeaderCategory button {
         padding: 7px 15px !important;
     }
@@ -955,6 +1066,12 @@
     }
 }
 
+@media (max-width: 357px) {
+    .contact-us-container {
+        height: 1000px !important;
+    }
+}
+
 @media (max-width: 354px) {
     .TestimonialsBoxChildDiv {
         height: 383px !important;
@@ -966,5 +1083,14 @@
 
     .footerBox p {
         font-size: 13px !important;
+    }
+}
+
+@media (max-width: 332px) {
+    .contact-us-container {
+        height: 1091px !important;
+    }
+    .contact-us-item, .contact-us-box {
+        height: 505px !important;
     }
 }
