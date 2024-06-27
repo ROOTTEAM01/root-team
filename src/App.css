@@ -34,3 +34,7 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background: #0e0f20;
 }
+
+.App {
+    color: var(--body_color);
+}

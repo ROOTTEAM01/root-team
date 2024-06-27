@@ -1,0 +1,466 @@
+:root {
+    --body_background: white;
+    --body_color: #000000;
+    --link_color: navy;
+    --main_divs_background: #00B9C5;
+    --button_transparent_background: rgba(0, 0, 0, 0); 
+    --button_transparent_color: white;
+    --button_Nottransparent_background: rgb(255, 255, 255); 
+    --button_Nottransparent_color: rgb(0, 0, 0); 
+    --button_red: #DB3647;
+    --button_red_text: white;
+    --main_p_color: #FFFFFF99;
+    --main_h3_color: #0E0F20;
+    --Cont-logo-ipsum: #E2E5F2;
+    --background_div_letter: #E2E5F2;
+    --footer_background: #333787;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--body_color) !important;
+    background-color: var(--body_background);
+  }
+
+.dark_mode {
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .dark_mode_input {
+    display: none;
+  }
+  
+  .dark_mode_label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .dark_mode_label i {
+    /* display: block; */
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .dark_mode_label i.fa-moon {
+    color: #ccc;
+  }
+  
+  .dark_mode_label i.fa-sun {
+    color: #333;
+  }
+  
+  /* Переопределение стилей для тёмной темы */
+  [data-theme="dark"] .dark_mode_label {
+    background-color: #333;
+  }
+  
+  [data-theme="dark"] .dark_mode_label i.fa-moon {
+    color: #fff;
+  }
+  
+  [data-theme="dark"] .dark_mode_label i.fa-sun {
+    color: #333;
+  }
+
+/* * {
+    transition: all 0.01s ease-in-out;
+  } */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* dark mode styles */
+
+  
+  [data-theme="dark"] {
+    --body_background: #0E0F20;
+    --body_color: #ffffff;
+    --link_color: rgb(34, 115, 221);
+    --main_divs_background: #00B9C5;
+    --button_transparent_background: rgba(0, 0, 0, 0); 
+    --button_transparent_color: white;
+    --button_Nottransparent_background: rgb(255, 255, 255); 
+    --button_Nottransparent_color: rgb(0, 0, 0); 
+    --main_p_color: #FFFFFF99;
+    --main_h3_color: #0E0F20;
+    --Cont-logo-ipsum: #E2E5F2;
+    --background_div_letter: #E2E5F2;
+    --button_red: #DB3647;
+    --button_red_text: white;
+    --footer_background: #333787;
+  }
+
+
+  [data-theme="dark"] body {
+    background-color: var(--body_background);
+    color: var(--body_color) !important;
+  }
+
+
+  /* HOME PAGE */
+
+  [data-theme="dark"] .UlHeader > li > a {
+    color: rgb(255, 255, 255);
+  }
+
+  [data-theme="dark"] .HeaderCategory > button > a{
+    color: white;
+  }
+  
+  [data-theme="dark"] .child-itemCont > div > button, .aboutUsText > div > button, .JoinUsContChildDiv > div > button{
+      background-color: var(--button_transparent_background);
+      color: var(--button_transparent_color);
+  }
+
+  [data-theme="dark"] .HeaderCategory button, .WorksTitleBtn button, .newsLetterContChildDiv2 > form > button {
+    background-color: var(--button_red);
+    color: var(--button_red_text);
+}
+
+  [data-theme="dark"] .btnLgProgramming > button{
+    background-color: var(--button_Nottransparent_background);
+    color: var(--button_Nottransparent_color);
+  }
+    
+  [data-theme="dark"] .client-Item {
+      background-color: var(--main_divs_background);
+  }
+
+  [data-theme="dark"] h4 {
+    color: var(--main_divs_background);
+  }
+
+  [data-theme="dark"] p {
+    color: var(--main_p_color);
+  }
+
+  [data-theme="dark"] .ContLogoIpsum {
+    background-color: var(--Cont-logo-ipsum);
+  }
+
+  [data-theme="dark"] .ContLogoIpsum > h3 {
+    color: #333787;
+  }
+
+  [data-theme="dark"] .TestimonialsBoxChildDiv {
+    background-color: #fff;
+  }
+
+  [data-theme="dark"] .TestimonialsBoxChildDiv > div > h2 {
+    color: #000;
+  }
+
+  [data-theme="dark"] .TestimonialsBoxCont > p {
+    color: gray;
+  }
+
+  [data-theme="dark"] .TestimonialsBoxCont > span > i {
+    color: #F2C94C;
+  }
+
+  [data-theme="dark"] .newsLetterCont {
+    background-color: var(--background_div_letter);
+  }
+
+  [data-theme="dark"] .newsLetterContChildDiv > h2 {
+    color: black;
+  }
+
+  [data-theme="dark"] .TestimonialsNameSurname > h3 {
+    color: black;
+  }
+
+  [data-theme="dark"] .newsLetterContChildDiv2 > h3 {
+    color: #333787;
+  }
+
+  [data-theme="dark"] .newsLetterContChildDiv2 > p {
+    color: gray;
+  }
+
+  [data-theme="dark"] footer {
+    background-color: var(--footer_background);
+  }
+
+  [data-theme="dark"] .footerBox > p, .footerBox > a > p, .footerCardBox2 > a, .footerItem2 > p, .footerEndTextDiv > a > p {
+    color: white;
+  }
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+  
+
+  /* SERVICES PAGE */
+
+
+  [data-theme="dark"] .LinkItem > a {
+    color: white;
+  }
+
+  [data-theme="dark"] .ServicesContactBox > div > button {
+    background-color: var(--button_red);
+    color: var(--button_red_text);
+  }
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+  /* BLOG PAGE */
+
+  [data-theme="dark"] .linkedinLink > span {
+    color: var(--main_divs_background);
+  }
+
+  [data-theme="dark"] .staff-member-blog {
+    background-color: white;
+  }
+
+  [data-theme="dark"] .staff-member-blog {
+    background-color: white;
+  }
+
+  [data-theme="dark"] .staff-member-blog > h3 {
+    color: var(--main_h3_color);
+  }
+
+  [data-theme="dark"] .staff-member-blog > p {
+    color: gray;
+  }  
+
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+  /* CONTACT PAGE */
+
+  [data-theme="dark"] .ItemContactUsBg {
+    background-color: #333787;
+  }  
+
+  [data-theme="dark"] .contact-us-box > form > div > button {
+    background-color: var(--button_red);
+    color: var(--button_red_text);
+  }  
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+  /* TEAM PAGE */
+  
+  [data-theme="dark"] .staff-team {
+    color: var(--main_divs_background);
+  }  
+
+  [data-theme="dark"] .staff-member {
+    background-color: #fff;
+  }  
+
+  [data-theme="dark"] .staff-member > h3 {
+    color: var(--main_h3_color);
+  } 
+  
+  [data-theme="dark"] .staff-position {
+    color: gray;
+  } 
+
+
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* light mode styles */
+
+  /* HOME PAGE */
+
+  [data-theme="light"] body {
+    background-color: white;
+    color: black;
+  }
+
+  [data-theme="light"] .Header-Item {
+    background-color: rgba(0, 247, 255, 0.856); 
+    background-blend-mode: color;
+  }
+
+  [data-theme="light"] .UlHeader > li > a {
+    color: black;
+  }
+
+  [data-theme="light"] .UlHeader > li > a:hover {
+    color: rgb(6, 94, 105) !important;
+  }
+
+  [data-theme="light"] .active {
+    color: rgb(6, 94, 105) !important;
+  }
+
+  [data-theme="light"] .HeaderCategory > button > a{
+    color: black;
+  }
+
+  [data-theme="light"] .child-itemCont > div > button{
+    background-color: inherit;
+    border: 1px solid black;
+  }
+
+  [data-theme="light"] .client-Item {
+    background-color: var(--main_divs_background);
+  }
+
+  [data-theme="light"] h4 {
+    color: rgb(6, 94, 105);
+  }
+
+  [data-theme="light"] p {
+    color: rgb(19, 23, 29);
+  }
+
+  [data-theme="light"] .ContLogoIpsum {
+    background-color: rgb(100, 91, 180);
+  }
+
+  [data-theme="light"] .boxWorksChildDiv > h4 {
+    color: rgb(0, 136, 199);
+  }
+
+  [data-theme="light"] .boxWorksChildDiv {
+    background-color: rgb(60, 51, 95);
+  }
+
+  [data-theme="light"] .Testimonials-Item {
+    background-color: rgba(0, 247, 255, 0.856); 
+    background-blend-mode: color;
+  }
+
+  [data-theme="light"] .TestimonialsBoxChildDiv {
+    background-color: #605b68a6; 
+  }
+
+  [data-theme="light"] .TestimonialsBoxCont > span > i {
+    color: #ffbf00;
+  }
+
+  [data-theme="light"] .TestimonialsNameSurname > h4 {
+    color: #00ccff;
+  }
+
+  [data-theme="light"] .TestimonialsBoxCont > p {
+    color: #353738;
+  }
+
+  [data-theme="light"] .JoinUs-Item {
+    background-color: #373c9b77;
+  }
+
+  [data-theme="light"] .JoinUsContChildDiv > div > button {
+    color: #000000;
+    border: 1px solid black;
+  }
+
+  [data-theme="light"] .newsLetterCont {
+    background-color: #8f91bdf3;
+  }
+
+  [data-theme="light"] footer {
+    background-color: rgb(141, 141, 194);
+  }
+
+  [data-theme="light"] .footerBox > a > p {
+    color: black;
+  }
+
+  [data-theme="light"] .footerCardBox2 > a {
+    color: black;
+  }
+
+  [data-theme="light"] .footerEndTextDiv > a > p{
+    color: black;
+  }
+
+  [data-theme="light"] .footerItem {
+    border-bottom: 1px solid black;
+  }
+
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+  /* SERVICES PAGE */
+
+  [data-theme="light"] .ContactHeaderItem {
+    background-color: rgba(106, 110, 110, 0.911); 
+    background-blend-mode: color;
+  }
+
+  [data-theme="light"] .LinkItem > a {
+    color: white;
+  }
+
+  [data-theme="light"] .ServicesContactBox > div > button {
+    background-color: var(--button_red);
+    color: var(--button_red_text);
+  }
+
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

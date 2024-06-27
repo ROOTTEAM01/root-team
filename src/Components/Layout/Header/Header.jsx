@@ -1,17 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleBoolean, toggleBooleanF } from '../../../features/flag/flagReducer';
+import {toggleBoolean, toggleBooleanF } from '../../../features/flag/flagReducer';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../img/logo.png';
 import FlagArmenia from '../../../img/ArmFlag.jpg';
 import FlagAmerica from '../../../img/AmFlag.jpg';
 import './header.css';
+import DarkMode from '../../DarkMode';
+
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
   const flag = useSelector(state => state.flag.flag); 
+  const isDarkMode = useSelector(state => state.flag.isDarkMode);
   const dispatch = useDispatch();
+  const [theme, setTheme] = useState('light'); // Состояние для хранения текущей темы
+
 
   const [bars, setBars] = React.useState(false);
 
@@ -52,7 +57,7 @@ export const Header = () => {
   };
 
   return (
-    <>
+    <div className={`header-container ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
       <header>
         <div className='header-container'>
           <div className="itemLogo">
@@ -103,10 +108,19 @@ export const Header = () => {
               </p>
             </div>
 
+            {/* <div className='darkLightModesMain'>
+              <div className='darkMode'>
+                <i class="fa-regular fa-moon" ></i>
+              </div>
+              <div className='lightMode'>
+              <i class="fa-regular fa-sun"></i>
+              </div>
+            </div> */}
+            <DarkMode />
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 

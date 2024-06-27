@@ -5,7 +5,7 @@
     justify-content: center;
     background-image: linear-gradient(#0e0f20d9, #0e0f20d9),
     url('../../../img/testi-bg.jpg');
-    background-color: #0E0F20;;
+    /* background-color: #0E0F20;; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,7 @@
     height: 376px;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     position: relative;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .TestimonialsBoxCont p {
-    color: #0E0F2099;;
+    /* color: #0E0F2099;; */
     font-size: 17px;
     margin: 22px 0;
 }
@@ -69,7 +69,7 @@
 }
 
 .TestimonialsBoxCont span i {
-    color: #F2C94C;
+    /* color: #F2C94C; */
     font-size: 17px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .TestimonialsNameSurname h4 {
-    color: #00B9C5;
+    /* color: #00B9C5; */
     letter-spacing: 3px;
     font-size: 13px;
 }
@@ -96,5 +96,5 @@
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #0E0F20;
+    /* color: #0E0F20; */
 }

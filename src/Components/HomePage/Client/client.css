@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00B9C5;
+    /* background-color: #00B9C5; */
     position: relative;
 }
 
@@ -17,7 +17,7 @@
 .countClientsItem {
     display: flex;
     align-items: center;
-    color: white;
+    /* color: white; */
 }
 
 .countClientsItem h3 {
