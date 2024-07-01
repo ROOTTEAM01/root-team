@@ -16,6 +16,25 @@
     }
 }
 
+@media (max-width: 1366px) {
+    .main-section-blog-title {
+        width: 90% !important;
+    }
+
+    .div-blog-img1 > img {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1268px) {
+    .staff-photo {
+        width: 244px !important;
+    }
+
+    .staff-grid {
+        width: 1170px !important;
+    }
+}
 
 @media (max-width: 1197px) {
 
@@ -41,7 +60,7 @@
         height: 246px !important;
     }
 
-    .ContactHeaderItemCont, .ServicesContact, .header-container, .ItemCont, .ContClientItem, .aboutUsCont, .ServicesCont, .ContLogoIpsum, .worksCont, .TestimonialsCont, .JoinUsCont, .newsLetterCont, .footerItem, .footerItem2 {
+    .staff-grid-blog, .staff-grid, .ContactHeaderItemCont, .ServicesContact, .header-container, .ItemCont, .ContClientItem, .aboutUsCont, .ServicesCont, .ContLogoIpsum, .worksCont, .TestimonialsCont, .JoinUsCont, .newsLetterCont, .footerItem, .footerItem2 {
         width: 90% !important;
         position: relative !important;
     }
@@ -156,6 +175,17 @@
     }
 }
 
+@media (max-width: 1154px) {
+    .staff-members {
+        justify-content: center !important;
+    }
+
+    .staff-member-blog {
+        margin: 10px 10px !important;
+    }
+}
+
+
 @media (max-width: 1113px) {
 
     .aboutUsItemImg img {
@@ -250,11 +280,15 @@
 
 @media (max-width: 1036px) {
 
+    .blog-us-text h2, .blog-title-div > h2 {
+        font-size: 42px !important;
+    }
+
     .teamUsMain {
         gap: 33px !important;
     }
 
-    .teamUsText{
+    .teamUsText {
         padding: 0 !important;
     }
 
@@ -572,8 +606,34 @@
     }
 }
 
+@media (max-width: 814px) {
+    .staff-member-blog, .staff-photo-blog {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
 
 @media (max-width: 778px) {
+
+    .main-section-blog-title {
+        margin-bottom: 130px !important;
+    }
+
+    .blog-us-text {
+        width: auto !important;
+    }
+
+    .blog-title-div {
+        width: auto !important;
+    }
+
+    .blog-us-text h2, .blog-title-div > h2 {
+        font-size: 36px !important;
+    }
+
+    .div-blog-img1 > img {
+        width: 250px !important;
+    }
 
     .map {
         padding-bottom: 231px !important;
@@ -600,6 +660,7 @@
 
     }
 
+
     .newsLetterCont form label {
         width: 100% !important;
     }
@@ -623,6 +684,13 @@
 
     .newsLetterImg2, .newsLetterImg3 {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 723px) {
+    .staff-title {
+        width: auto !important;
+        height: auto !important;
     }
 }
 
@@ -749,8 +817,16 @@
     }
 }
 
+@media (max-width: 654px) {
+    .staff-photo {
+        width: 186px !important;
+    }
+}
 
 @media (max-width: 636px) {
+    .blog-us-text h2, .blog-title-div > h2 {
+        font-size: 32px !important;
+    }
 
     .aboutUsImg img {
         width: 100% !important;
@@ -795,6 +871,34 @@
 
 }
 
+@media (max-width: 584px) {
+    .blog-us-text h2, .blog-title-div > h2 {
+        font-size: 25px !important;
+    }
+
+    .blog-us-text p {
+        font-size: 12px !important;
+    }
+
+    .blog-title-div p {
+        font-size: 13px !important;
+    }
+
+    .div-blog-img1 > img {
+        width: 192px !important;
+    }
+}
+
+@media (max-width: 557px) {
+    .team-title {
+        font-size: 44px !important;
+    }
+
+    .team-description {
+        font-size: 14px !important;
+    }
+}
+
 @media (max-width: 503px) {
     .footerEndTextDiv {
         margin-top: 10px !important;
@@ -823,6 +927,11 @@
 }
 
 @media (max-width: 534px) {
+
+    .staff-photo {
+        width: 162px !important;
+    }
+
     .newsLetterCont h2 {
         font-size: 29px !important;
     }
@@ -835,7 +944,7 @@
 
 @media (max-width: 500px) {
 
-    .contact-us-box button{
+    .contact-us-box button {
         font-size: 14px !important;
         padding: 12px 22px !important;
     }
@@ -923,8 +1032,39 @@
 
 }
 
+@media (max-width: 472px) {
+    .staff-photo {
+        width: 100% !important;
+    }
+
+
+}
 
 @media (max-width: 456px) {
+
+    .blog-title-div {
+        margin: 0 0 54px 0 !important;
+    }
+
+    .linkedinLink {
+        font-size: 12px !important;
+    }
+
+    .div-blog-img1 > img {
+        width: 155px !important;
+    }
+
+    .blog-us-text h2, .blog-title-div > h2 {
+        font-size: 21px !important;
+    }
+
+    .blog-us-text p {
+        font-size: 11px !important;
+    }
+
+    .blog-us-main {
+        gap: 22px !important;
+    }
 
     .ServicesContactBox button {
         font-size: 12px !important;
@@ -1032,6 +1172,10 @@
 
 @media (max-width: 390px) {
 
+    .team-title {
+        font-size: 33px !important;
+    }
+
     .ServicesContactImg img {
         width: 100% !important;
         height: 220px !important;
@@ -1086,10 +1230,17 @@
     }
 }
 
+@media (max-width: 348px) {
+    .blog-us-text h2, .blog-title-div > h2 {
+        font-size: 18px !important;
+    }
+}
+
 @media (max-width: 332px) {
     .contact-us-container {
         height: 1091px !important;
     }
+
     .contact-us-item, .contact-us-box {
         height: 505px !important;
     }
