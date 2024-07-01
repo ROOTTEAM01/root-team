@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import {toggleBoolean, toggleBooleanF } from '../../../features/flag/flagReducer';
@@ -9,40 +9,58 @@ import FlagAmerica from '../../../img/AmFlag.jpg';
 import './header.css';
 import { useLocation } from 'react-router-dom';
 import DarkMode from '../../DarkMode';
+import { FaGlobeAmericas, FaGlobeAsia } from 'react-icons/fa';
+// import { MdLanguage } from 'react-icons/md';
+
+const languages = [
+  { code: 'en', name: 'English', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1ec-1f1e7.png' },
+  { code: 'ru', name: 'Русский', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1f7-1f1fa.png' },
+  { code: 'hy', name: 'Հայերեն', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1e6-1f1f2.png' },
+];
 
 
 export const Header = () => {
   const location = useLocation();
+  const [theme, setTheme] = useState('light'); 
+  const [aboutHovered, setAboutHovered] = useState(false); 
+  const [bars, setBars] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedLang, setSelectedLang] = useState(languages[0]);
   const { t, i18n } = useTranslation();
   const flag = useSelector(state => state.flag.flag); 
   const isDarkMode = useSelector(state => state.flag.isDarkMode);
   const dispatch = useDispatch();
-  const [theme, setTheme] = useState('light'); // Состояние для хранения текущей темы
-  const [aboutHovered, setAboutHovered] = useState(false); // Состояние для отслеживания наведения на "About Us"
 
-  const [bars, setBars] = React.useState(false);
-
-  React.useEffect(() => {
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    if (savedLanguage) {
-      i18n.changeLanguage(savedLanguage);
-      if (savedLanguage === 'en') {
-        dispatch(toggleBooleanF()); 
-      } else {
-        dispatch(toggleBoolean()); 
-      }
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    i18n.changeLanguage(savedLanguage);
+    if (savedLanguage === 'en') {
+      dispatch(toggleBooleanF()); 
+    } else {
+      dispatch(toggleBoolean()); 
     }
+    const lang = languages.find(l => l.code === savedLanguage);
+    if (lang) setSelectedLang(lang);
   }, [dispatch, i18n]);
+
+  const handleSelect = (lang) => {
+    setSelectedLang(lang);
+    setIsOpen(false);
+
+    i18n.changeLanguage(lang.code); 
+  localStorage.setItem('selectedLanguage', lang.code); 
+
+  if (lang.code === 'en') {
+    dispatch(toggleBooleanF()); 
+  } else {
+    dispatch(toggleBoolean()); 
+  }
+  };
 
   const handleNavLinkClick = (e) => {
     e.preventDefault();
     const { href } = e.target;
     window.location.href = href;
-  };
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    localStorage.setItem('selectedLanguage', lng); 
   };
 
   let StyleDiv = {
@@ -94,7 +112,6 @@ export const Header = () => {
               <li><NavLink onClick={handleNavLinkClick} to="/Services">{t('services')}</NavLink></li>
               <li><NavLink onClick={handleNavLinkClick} to="/Blog">{t('blog')}</NavLink></li>
               <li><NavLink onClick={handleNavLinkClick} to="/Contact">{t('contact')}</NavLink></li>
-              {/* <li><NavLink onClick={handleNavLinkClick} to="/Team">{t('team')}</NavLink></li> */}
             </ul>
 
             <button>
@@ -103,22 +120,27 @@ export const Header = () => {
               </a>
             </button>
 
-            <div className="flagItem" style={{cursor: "pointer"}}>
-              <p className="armFlagItem"
-                 style={{ display: flag ? 'none' : 'inline' }}
-                 onClick={() => {
-                   dispatch(toggleBoolean());
-                   changeLanguage('hy');
-                 }}>
-                <img src={FlagArmenia} alt="" />
-              </p>
-              <p className="amFlagItem" style={{ display: !flag ? 'none' : 'inline' }}
-                 onClick={() => {
-                   dispatch(toggleBooleanF());
-                   changeLanguage('en');
-                 }}>
-                <img src={FlagAmerica} alt="" />
-              </p>
+          <div className="language-selector">
+              <button className="dropbtn" onClick={() => setIsOpen(!isOpen)}>
+                <img src={selectedLang.icon} alt={`${selectedLang.name} Flag`} className="icon" />
+                {/* <span className="language-name">{selectedLang.name}</span> */}
+              </button>
+              <div className={`dropdown-conten ${isOpen ? 'show' : ''}`}>
+                {languages.map((lang) => (
+                  <div
+                    key={lang.code}
+                    className={`dropdown-item ${selectedLang.code === lang.code ? 'disabled' : ''}`}
+                    onClick={() => {
+                      if (selectedLang.code !== lang.code) {
+                        handleSelect(lang);
+                      }
+                    }}
+                  >
+                    <img src={lang.icon} alt={`${lang.name} Flag`} className="icon" />
+                    <span className="language-name">{lang.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
 
