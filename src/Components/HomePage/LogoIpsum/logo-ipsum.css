@@ -4,14 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #0e0f20; */
+    background-color: #0e0f20;
     position: relative;
 }
 
 .ContLogoIpsum {
     width: 1170px;
     height: 190px;
-    /* background-color: #E2E5F2; */
+    background-color: #E2E5F2;
     position: absolute;
     top: -109px;
     display: flex;
@@ -22,7 +22,7 @@
 
 .ContLogoIpsum h3 {
     position: relative;
-    /* color: #333787; */
+    color: #333787;
     font-weight: bold;
     font-size: 24px;
 }

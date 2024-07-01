@@ -7,16 +7,18 @@ import logo from '../../../img/logo.png';
 import FlagArmenia from '../../../img/ArmFlag.jpg';
 import FlagAmerica from '../../../img/AmFlag.jpg';
 import './header.css';
+import { useLocation } from 'react-router-dom';
 import DarkMode from '../../DarkMode';
 
 
 export const Header = () => {
+  const location = useLocation();
   const { t, i18n } = useTranslation();
   const flag = useSelector(state => state.flag.flag); 
   const isDarkMode = useSelector(state => state.flag.isDarkMode);
   const dispatch = useDispatch();
   const [theme, setTheme] = useState('light'); // Состояние для хранения текущей темы
-
+  const [aboutHovered, setAboutHovered] = useState(false); // Состояние для отслеживания наведения на "About Us"
 
   const [bars, setBars] = React.useState(false);
 
@@ -56,9 +58,13 @@ export const Header = () => {
     }
   };
 
+  const toggleAboutHover = () => {
+    setAboutHovered(!aboutHovered);
+  };
+
   return (
     <div className={`header-container ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-      <header>
+      <header style={{zIndex: location.pathname === "/" ? "0" : "1"}}>
         <div className='header-container'>
           <div className="itemLogo">
             <div className="HamburgerItem">
@@ -69,19 +75,26 @@ export const Header = () => {
                 <i onClick={() => setBars(false)} className="fa-solid fa-xmark"></i>
               </span>
             </div>
-            <a href="#">
+            <a href="/">
               <img src={logo} alt=""/>
             </a>
           </div>
           <div className="HeaderCategory">
             <ul className="UlHeader" style={bars ? StyleDiv.c : StyleDiv.d}>
               <li><NavLink onClick={handleNavLinkClick} exact to='/'>{t('home')}</NavLink></li>
+              {/* <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">{t('about')}</NavLink></li> */}
+              <li onMouseEnter={toggleAboutHover} onMouseLeave={toggleAboutHover} className='dropdown'>
+                <NavLink onClick={handleNavLinkClick} to="/AboutUs" className="aboutUs">{t('about')}</NavLink>
+                <i class="fa fa-angle-down" style={{color: "white", marginLeft: "5px", cursor: "pointer"}}></i>
+                  <ul className="dropdown-content">
+                    <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">{t('About')}</NavLink></li>
+                    <li><NavLink onClick={handleNavLinkClick} to="/Team">{t('team')}</NavLink></li>
+                  </ul>
+              </li>
               <li><NavLink onClick={handleNavLinkClick} to="/Services">{t('services')}</NavLink></li>
-              <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">{t('about')}</NavLink></li>
               <li><NavLink onClick={handleNavLinkClick} to="/Blog">{t('blog')}</NavLink></li>
-              <li><NavLink onClick={handleNavLinkClick} to="/Pages">{t('pages')}</NavLink></li>
               <li><NavLink onClick={handleNavLinkClick} to="/Contact">{t('contact')}</NavLink></li>
-              <li><NavLink onClick={handleNavLinkClick} to="/Team">{t('team')}</NavLink></li>
+              {/* <li><NavLink onClick={handleNavLinkClick} to="/Team">{t('team')}</NavLink></li> */}
             </ul>
 
             <button>
@@ -108,6 +121,10 @@ export const Header = () => {
               </p>
             </div>
 
+
+
+            {/* DARK AND LIGHT MODES */}
+
             {/* <div className='darkLightModesMain'>
               <div className='darkMode'>
                 <i class="fa-regular fa-moon" ></i>
@@ -116,7 +133,10 @@ export const Header = () => {
               <i class="fa-regular fa-sun"></i>
               </div>
             </div> */}
-            <DarkMode />
+            {/* <DarkMode /> */}
+
+
+            
           </div>
         </div>
       </header>

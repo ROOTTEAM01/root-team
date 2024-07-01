@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #0e0f20; */
+    background-color: #0e0f20;
     padding-bottom: 200px;
 
     .JoinUsCont {
@@ -41,7 +41,7 @@
         margin-left: 181px;
 
         h4 {
-            /* color: rgb(0, 185, 197); */
+            color: rgb(0, 185, 197);
             letter-spacing: 3px;
             font-size: 13px;
         }
@@ -50,11 +50,11 @@
             position: relative;
             font-size: 54px;
             margin-top: 22px;
-            /* color: white; */
+            color: white;
         }
 
         p {
-            /* color: rgba(255, 255, 255, 0.6); */
+            color: rgba(255, 255, 255, 0.6);
             font-size: 17px;
             margin: 22px 0;
         }
@@ -62,8 +62,8 @@
         button {
             border: 1px solid white;
             font-weight: bold;
-            /* color: white; */
-            /* background-color: rgba(0, 0, 0, 0); */
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
             padding: 16px 32px;
             border-radius: 100px;
             cursor: pointer;

@@ -1,9 +1,8 @@
 {
-    "home": "home",
-    "services": "services",
-    "about": "about",
-    "blog": "blog",
-    "pages": "pages",
-    "contact": "contact",
-    "team": "team"
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "team": "Team"
   }

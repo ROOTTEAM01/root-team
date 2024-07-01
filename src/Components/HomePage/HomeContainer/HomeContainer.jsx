@@ -1,3 +1,4 @@
+import BackgroundVideo from '../../BackgroundVideo/BackgroundVideo'
 import './home-container.css'
 
 
@@ -7,9 +8,10 @@ export let HomeContainer = (props) => {
 
     return (
         <>
-            <section className="Header-Item">
-                <section className="ItemCont">
-                    <div className="child-itemCont">
+                <BackgroundVideo setRefs={setRefs}/>
+            {/* <section className="Header-Item">
+                <section className="ItemCont"> */}
+                    {/* <div className="child-itemCont">
                         <h1 className="anim" ref={setRefs}>Quality Digital Services You Really
                             Need!</h1>
                         <p>We build and transform businesses by launching market-leading digital products, platforms,
@@ -18,9 +20,9 @@ export let HomeContainer = (props) => {
                         <div>
                             <button>Explore Our Services</button>
                         </div>
-                    </div>
-                </section>
-            </section>
+                    </div> */}
+                {/* </section>
+            </section> */}
         </>
     )
 }
