@@ -26,6 +26,7 @@
     }
 }
 
+
 @media (max-width: 1268px) {
     .staff-photo {
         width: 244px !important;
@@ -55,6 +56,10 @@
         width: 556px !important;
     }
 
+    .header-container {
+        z-index: 2 !important;
+    }
+
     .ServicesContactImg img {
         width: 374px !important;
         height: 246px !important;
@@ -63,6 +68,11 @@
     .staff-grid-blog, .staff-grid, .ContactHeaderItemCont, .ServicesContact, .header-container, .ItemCont, .ContClientItem, .aboutUsCont, .ServicesCont, .ContLogoIpsum, .worksCont, .TestimonialsCont, .JoinUsCont, .newsLetterCont, .footerItem, .footerItem2 {
         width: 90% !important;
         position: relative !important;
+    }
+
+    .content {
+        width: 91% !important;
+        left: 50% !important;
     }
 
     .newsLetterCont {
@@ -174,6 +184,7 @@
         font-size: 42px !important;
     }
 }
+
 
 @media (max-width: 1154px) {
     .staff-members {
@@ -403,6 +414,13 @@
 
 
 @media (max-width: 953px) {
+    .dropdown:hover .dropdown-content {
+        position: relative !important;
+    }
+
+    .dropdown i{
+        color: #64657D !important;
+    }
 
     .contact-us-item h2 {
         font-size: 39px !important;
@@ -461,7 +479,6 @@
         background-color: white;
         left: 0;
         z-index: 0;
-        bottom: -300px;
         opacity: 0;
         transition: .0s;
         overflow: auto;
@@ -478,6 +495,11 @@
     .HeaderCategory ul a {
         color: #64657D !important;
     }
+
+    .HeaderCategory .dropbtn {
+        padding: 12px 20px !important;
+    }
+
 
     .HeaderCategory button {
         padding: 10px 32px !important;
@@ -521,6 +543,16 @@
         padding: 16px 32px !important;
         font-size: 16px !important;
     }
+
+    .dropbtn {
+        height: 39px !important;
+        width: 55px !important;
+    }
+
+    .HeaderCategory .dropbtn {
+        padding: 12px 11px !important;
+    }
+
 }
 
 
@@ -528,6 +560,13 @@
     .HeaderCategory ul {
         opacity: 1 !important;
         z-index: 1 !important;
+    }
+}
+
+
+@media (max-width: 952px) {
+    .HeaderCategory ul {
+        transition: .3s !important;
     }
 }
 
@@ -944,6 +983,34 @@
 
 @media (max-width: 500px) {
 
+    .dropbtn {
+        height: 30px !important;
+        width: 40px !important;
+    }
+
+    .HeaderCategory .dropbtn {
+        padding: 12px 8px !important;
+    }
+
+
+    .language-name {
+        font-size: 9px !important;
+    }
+
+    .dropdown-conten {
+        min-width: auto !important;
+        width: 106px !important;
+    }
+
+    .dropdown-item .icon {
+        width: 21px !important;
+        height: auto !important;
+    }
+
+    .HeaderCategory button {
+        margin-left: 20px !important;
+    }
+
     .contact-us-box button {
         font-size: 14px !important;
         padding: 12px 22px !important;
@@ -1217,6 +1284,16 @@
 }
 
 @media (max-width: 354px) {
+
+    .dropdown-conten {
+        width: auto !important;
+        left: 9px !important;
+    }
+
+    .language-name {
+        display: none !important;
+    }
+
     .TestimonialsBoxChildDiv {
         height: 383px !important;
     }

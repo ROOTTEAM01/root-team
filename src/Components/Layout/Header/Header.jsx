@@ -72,7 +72,7 @@ export const Header = () => {
     c: {
       zIndex: '1', opacity: '1', top: '103px',
     }, d: {
-      zIndex: '0', opacity: '0', top: '-100px',
+      zIndex: '0', opacity: '0', top: '-300px',
     }
   };
 
@@ -81,7 +81,7 @@ export const Header = () => {
   };
 
   return (
-    <div className={`header-container ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
+    <div className={`header-container2 ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
       <header style={{zIndex: location.pathname === "/" ? "0" : "1"}}>
         <div className='header-container'>
           <div className="itemLogo">
