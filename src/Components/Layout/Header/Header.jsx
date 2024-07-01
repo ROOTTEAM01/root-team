@@ -4,13 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import {toggleBoolean, toggleBooleanF } from '../../../features/flag/flagReducer';
 import { NavLink } from 'react-router-dom';
 import logo from '../../../img/logo.png';
-import FlagArmenia from '../../../img/ArmFlag.jpg';
-import FlagAmerica from '../../../img/AmFlag.jpg';
 import './header.css';
 import { useLocation } from 'react-router-dom';
 import DarkMode from '../../DarkMode';
-import { FaGlobeAmericas, FaGlobeAsia } from 'react-icons/fa';
-// import { MdLanguage } from 'react-icons/md';
 
 const languages = [
   { code: 'en', name: 'English', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1ec-1f1e7.png' },
@@ -99,11 +95,11 @@ export const Header = () => {
           </div>
           <div className="HeaderCategory">
             <ul className="UlHeader" style={bars ? StyleDiv.c : StyleDiv.d}>
-              <li><NavLink onClick={handleNavLinkClick} exact to='/'>{t('home')}</NavLink></li>
+              <li><NavLink onClick={handleNavLinkClick} to='/'>{t('home')}</NavLink></li>
               {/* <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">{t('about')}</NavLink></li> */}
               <li onMouseEnter={toggleAboutHover} onMouseLeave={toggleAboutHover} className='dropdown'>
                 <NavLink onClick={handleNavLinkClick} to="/AboutUs" className="aboutUs">{t('about')}</NavLink>
-                <i class="fa fa-angle-down" style={{color: "white", marginLeft: "5px", cursor: "pointer"}}></i>
+                <i className="fa fa-angle-down" style={{color: "white", marginLeft: "5px", cursor: "pointer"}}></i>
                   <ul className="dropdown-content">
                     <li><NavLink onClick={handleNavLinkClick} to="/AboutUs">{t('About')}</NavLink></li>
                     <li><NavLink onClick={handleNavLinkClick} to="/Team">{t('team')}</NavLink></li>
@@ -149,10 +145,10 @@ export const Header = () => {
 
             {/* <div className='darkLightModesMain'>
               <div className='darkMode'>
-                <i class="fa-regular fa-moon" ></i>
+                <i className="fa-regular fa-moon" ></i>
               </div>
               <div className='lightMode'>
-              <i class="fa-regular fa-sun"></i>
+              <i className="fa-regular fa-sun"></i>
               </div>
             </div> */}
             {/* <DarkMode /> */}

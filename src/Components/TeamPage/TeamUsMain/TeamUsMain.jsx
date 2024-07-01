@@ -19,7 +19,7 @@ const TeamUsMain = ({setRefs}) => {
             <ul className='linkedinUL'>
                 <li>
                     <a href="#" className='linkedinLink'>
-                        <i class="fa-brands fa-linkedin" style={{color: "#74C0FC"}}></i>
+                        <i className="fa-brands fa-linkedin" style={{color: "#74C0FC"}}></i>
                         <span >Linkedin/johnwilliam</span>
                     </a>
                 </li>

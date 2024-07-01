@@ -22,7 +22,7 @@ const BlogTitleContainer = ({setRefs}) => {
                     <li>
                         <a href="#" className='linkedinLink'>
                             <span >Read More</span>
-                            <i class="fa-solid fa-arrow-right" style={{color: "#00B9C5"}}></i>
+                            <i className="fa-solid fa-arrow-right" style={{color: "#00B9C5"}}></i>
                         </a>
                     </li>
                 </ul>

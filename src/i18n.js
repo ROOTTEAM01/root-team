@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 import translationEn from './locales/en/translation.json';
 import translationHy from './locales/hy/translation.json';
+import translationRu from './locales/ru/translation.json';
 
 i18n
   .use(initReactI18next)
@@ -10,6 +11,7 @@ i18n
     resources: {
       en: { translation: translationEn },
       hy: { translation: translationHy },
+      ru: { translation: translationRu },
     },
     lng: 'en', 
     fallbackLng: 'en', 
