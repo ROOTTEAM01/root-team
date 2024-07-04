@@ -414,6 +414,11 @@
 
 
 @media (max-width: 953px) {
+
+    .dropdown-conten{
+        left: -54px !important;
+    }
+
     .dropdown:hover .dropdown-content {
         position: relative !important;
     }
@@ -499,7 +504,6 @@
     .HeaderCategory .dropbtn {
         padding: 12px 20px !important;
     }
-
 
     .HeaderCategory button {
         padding: 10px 32px !important;
