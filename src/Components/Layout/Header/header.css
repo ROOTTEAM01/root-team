@@ -236,6 +236,11 @@ header a {
     display: inline-block;
 }
 
+.language-selector .dropbtn{
+    border: none;
+}
+
+
 .dropbtn {
     background: #18596a;
     color: #fff;
@@ -255,8 +260,7 @@ header a {
 }
 
 .dropbtn > img {
-    /* width: 100%; */
-    height: 120%;
+    width: 32px;
 }
 
 .dropbtn:hover {

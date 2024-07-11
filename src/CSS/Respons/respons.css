@@ -414,7 +414,6 @@
 
 
 @media (max-width: 953px) {
-
     .dropdown-conten{
         left: -54px !important;
     }
@@ -647,6 +646,7 @@
         height: 953px !important;
         padding: 40px 0 !important;
     }
+
 }
 
 @media (max-width: 814px) {
@@ -915,6 +915,10 @@
 }
 
 @media (max-width: 584px) {
+    .dropbtn > img {
+        width: 22px !important;
+    }
+
     .blog-us-text h2, .blog-title-div > h2 {
         font-size: 25px !important;
     }
