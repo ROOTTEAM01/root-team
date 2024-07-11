@@ -7,11 +7,14 @@ import logo from '../../../img/logo.png';
 import './header.css';
 import { useLocation } from 'react-router-dom';
 import DarkMode from '../../DarkMode';
+import flagUSA from "./Flag images/usa.png"
+import flagARM from "./Flag images/arm.jpeg"
+import flagRUS from "./Flag images/rus.jpeg"
 
 const languages = [
-  { code: 'en', name: 'English', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1ec-1f1e7.png' },
-  { code: 'ru', name: 'Русский', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1f7-1f1fa.png' },
-  { code: 'hy', name: 'Հայերեն', icon: 'https://twemoji.maxcdn.com/v/latest/72x72/1f1e6-1f1f2.png' },
+  { code: 'en', name: 'English', icon: flagUSA },
+  { code: 'ru', name: 'Русский', icon: flagRUS },
+  { code: 'hy', name: 'Հայերեն', icon: flagARM },
 ];
 
 
